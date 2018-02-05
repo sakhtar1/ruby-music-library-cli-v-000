@@ -1,3 +1,5 @@
+require 'pry'
+
 class MusicImporter
   attr_reader :path
 
@@ -19,5 +21,5 @@ class MusicImporter
     services = doc.search("li menu-item-1694'] a['href']").text
     binding.pry
   end
-  
+
 end
